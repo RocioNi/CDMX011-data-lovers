@@ -2,6 +2,10 @@ import data from './data/rickandmorty/rickandmorty.js';
 
 
 export let info = data.results;
+export const example = () => {
+  return 'example';
+};
+
 // filtrar por especie 
 export const speciesFilter = (data, tipo) => {
   let resultSpecies = data.filter(personaje => personaje.species === tipo)
@@ -14,7 +18,6 @@ export const genderFilter = (data, genero) => {
 
 }
 // funcion filtrar por episodio
-
 export const episodesFilter = (data, episodios) => {
 	const resultEpisodes = data.filter((personaje)=>personaje.episode.includes(episodios))
 	return resultEpisodes;
