@@ -1,6 +1,16 @@
 
+import { example } from '../src/data.js';
 import { speciesFilter, genderFilter, sortFilter, episodesFilter } from '../src/data.js';
 
+describe('example', () => {
+  it('is a function', () => {
+    expect(typeof example).toBe('function');
+  });
+
+  it('returns `example`', () => {
+    expect(example()).toBe('example');
+  });
+});
 describe('speciesFilter', () => {
   it('is a function', () => {
     expect(typeof speciesFilter).toBe('function');
@@ -43,6 +53,7 @@ describe('genderFilter', () => {
       expect (genderFilter(genderVariety,"Female")).toStrictEqual(genderSpecific);
       });
 });
+
 
 describe('sortFilter', () => {
   it('is a function', () => {
