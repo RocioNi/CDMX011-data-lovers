@@ -22,13 +22,14 @@ header{
   height: 100%;
   
 }
-/* etiquetas del filtro */
-label {
-  text-align: left;
-  color: white;
-  font-size: 19px;
-  font-family: "Palette Mosaic", cursive;
-}
+  label {
+    text-align: left;
+    /* color: white; */
+    font-size: 19px;
+    -webkit-text-fill-color: white;
+    font-family: "Palette Mosaic", cursive;
+  }
+
 
 /* imagen de fondo  */
 body {
@@ -166,7 +167,7 @@ h4 {
   .curious-data {
     display: flex;
     justify-content: center;
-  }
+  } 
 }
 
 @media all and (max-width: 600px) {
