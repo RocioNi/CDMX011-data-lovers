@@ -12,24 +12,25 @@ header{
 }
 
  /* estilo del filtro  */
-.container-select {
-  background-color: rgba(128, 128, 128, 0.522);
+.container-select { 
   display: flex;
   flex-flow: column nowrap;
+  background: rgba(128, 128, 128, 0.459);
+  /* background-blend-mode: multiply,multiply; */
   position: fixed;
   left: 0;
   top: 0;
   height: 100%;
-  
 }
-  label {
-    text-align: left;
-    /* color: white; */
-    font-size: 19px;
-    -webkit-text-fill-color: white;
-    font-family: "Palette Mosaic", cursive;
-  }
 
+
+  /* etiquetas del filtro */
+label {
+  text-align: left;
+  color: white;
+  font-size: 19px;
+  font-family: "Palette Mosaic", cursive;
+}
 
 /* imagen de fondo  */
 body {
@@ -58,10 +59,6 @@ body {
   transform-style: preserve-3d;
   transition: all 0.5s ease;
   background-color: #FFF7AE;
- 
-  /* background: #fff3af; */
-  /* margin-left: auto; */
-  /* margin-right: auto; */
 }
 
 /* efecto tarjetas */
@@ -130,19 +127,15 @@ h4 {
   justify-content:center
 }
 
-.footer {
+/* .footer {
   display: flex;
   flex-flow: column nowrap;
   padding-left: 12rem;
-  }
-
-.image {
-  border-radius: 30%;
-  flex: 3 1 40%;
-  /* height: 180px; */
-  /* width: 180px; */
-  /* position: relative; */
-}
+  } */
+/* .footer { */
+  /* background: #8cba51; */
+   /* background: #eeeeee; */
+/* } */
 
 .image {
   border-radius: 40%;
@@ -153,7 +146,7 @@ h4 {
 }
 
 .pie {
-  background-color: rgba(128, 128, 128, 0.522);
+  background: #fff3af73;
   display: flex;
   flex-flow: column nowrap;
   text-align: center;
