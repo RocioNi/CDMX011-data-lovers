@@ -1,3 +1,4 @@
+/* modifica todo el contenido */
 * {
   margin: 5px;
   padding: 10px;
@@ -5,50 +6,38 @@
 }
 
 header{
-	/* background-size:cover; */
-	/* height:100px; */
-	 /* width: 100%; */
-  /* z-index: auto; */
-	/* position: absolute; */
   margin-top: -5%;
 	margin-left: 28%;
   z-index: 10;
 }
 
-/* .titulo{
-  margin-top: -15%;
-	margin-left: 20%;
- 
-} */
-
+ /* estilo del filtro  */
 .container-select {
-  
+  background-color: rgba(128, 128, 128, 0.522);
   display: flex;
   flex-flow: column nowrap;
-  background: rgba(128, 128, 128, 0.459);
-  background-blend-mode: multiply,multiply;
   position: fixed;
   left: 0;
   top: 0;
   height: 100%;
+  
 }
-
+/* etiquetas del filtro */
 label {
   text-align: left;
-  /* color: white; */
+  color: white;
   font-size: 19px;
-  -webkit-text-fill-color: white;
   font-family: "Palette Mosaic", cursive;
 }
 
+/* imagen de fondo  */
 body {
-  /* background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
   background-image: url(../img/fondo-portal.png);
   background-size: cover;
   background-attachment: fixed;
   /* color: black; */
 }
-
+/* container padre (principal) */
 .container {
   margin-top: -5%;
   padding-left: 10rem;
@@ -56,6 +45,7 @@ body {
   padding-right: 0px;
 }
 
+/* estilo de tarjetas */
 .tarjetas {
   perspective: 1000px;
   height: 300px;
@@ -66,18 +56,22 @@ body {
   box-sizing: border-box;
   transform-style: preserve-3d;
   transition: all 0.5s ease;
-  /* background: #f5f5aa; */
+  background-color: #FFF7AE;
+ 
+  /* background: #fff3af; */
   /* margin-left: auto; */
   /* margin-right: auto; */
 }
 
-
+/* efecto tarjetas */
 .tarjetas:hover {
   border: solid 4px rgb(0, 162, 255);
-  box-shadow: rgb(0, 174, 255) 0px 0px 20px;
+  box-shadow: rgb(255, 115, 0) 0px 0px 10px;
   transform: rotateY(180deg);
 }
 
+
+/* tarjeta parte frontal */
 .front-card {
   margin-top: -10%;
   height: 300px;
@@ -123,30 +117,31 @@ h4 {
 }
 
 .lot-articles {
-  
   display: flex;
   flex: 2 1 50%;
   flex-flow: row wrap;
 }
 
 .articles {
- 
-  display: flex;
+ display: flex;
   flex: 2 1 auto;
   flex-flow: row wrap;
   justify-content:center
 }
 
-/* .footer {
+.footer {
   display: flex;
   flex-flow: column nowrap;
   padding-left: 12rem;
-  } */
-/* .footer { */
-  /* background: #8cba51; */
-   /* background: #eeeeee; */
-/* } */
+  }
 
+.image {
+  border-radius: 30%;
+  flex: 3 1 40%;
+  /* height: 180px; */
+  /* width: 180px; */
+  /* position: relative; */
+}
 
 .image {
   border-radius: 40%;
@@ -156,12 +151,8 @@ h4 {
   /* position: relative; */
 }
 
-
-
-
-
 .pie {
-  background: #fff3af73;
+  background-color: rgba(128, 128, 128, 0.522);
   display: flex;
   flex-flow: column nowrap;
   text-align: center;

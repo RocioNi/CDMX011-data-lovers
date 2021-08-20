@@ -2,15 +2,17 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta value="viewport" content="width=device-width, user-scalable=no ,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta value="viewport" content="width=device-width, user-scalable=no ,initial-scale=1.0", maximum-scale=1.0, minimum-scale=1.0 >
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">  <img src="img/rickymorty_bleed.png"> </header>
-     <!-- <div class="titulo"> <img src="img/character.png">   </div> -->
+    <!-- encabezado menu y logos -->
+    <header class="header"> 
+      <div class="logos"><img src="../img/2998297-small.png" class="logo" ></div>
      <div class="container-select">
-        <label>Filter by:</label><br>
+        <!-- Filtros -->
+        <label>Filter by:</label>
         <label>Alphabetical order</label>
         <select id="ordenA">
           <option value="" selected></option>
@@ -22,7 +24,6 @@
               <option selected></option>
             <option value="Alien">Alien</option>
             <option value="Animal">Animals</option>
-            <option value="Animal">Animals</option>
             <option value="Cronenberg">Cronenbergs</option>
             <option value="Disease">Diseases</option>
             <option value="Human">Human</option>
@@ -33,14 +34,14 @@
             <option value="Robot">Robots</option>
             <option value="unknown">Unknown</option>
             <option value="Vampire">Vampires</option>
-            </select><br>
+            </select>
               <label>Gender</label>
                 <select id="gender">
                   <option selected></option>
                     <option value="Female">Female</option>
                     <option value="Male">Male</option>
                     <option value="unknown">Unknown</option>
-                </select><br>
+                </select>
                 <label>Episodes</label>
              <select id="episodes">
               <option selected></option>
@@ -79,13 +80,17 @@
               <br>
               <button id="clear">Clear</button>
      </div>
-    
+    </header>
+     <!-- contenedor principal padre -->
     <div id="root" class="container">
     <section class="section">
       <div class="lot-articles">
+         <!-- contenedor donde van las tarjetas -->
         <div class="articles" id="articles"></div>
+         </div>
       </div>
     </section>
+     <!-- pie de pagina  -->
     <div class="footer">
       <div class="pie">
         <p>Pagina Realizada por Rocio y Edith xD</p>
