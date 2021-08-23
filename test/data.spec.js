@@ -5,6 +5,7 @@ import { speciesFilter, genderFilter, sortFilter, episodesFilter } from '../src/
 >>>>>>> e4f8fbd54d1a20437215a071834d0177d607e3ba
 
 import { speciesFilter, genderFilter, sortFilter, episodesFilter } from '../src/data.js';
+const ejemplo= "ejemplo"
 
 <<<<<<< HEAD
 describe('speciesFilter', () => {
@@ -70,7 +71,8 @@ describe('speciesFilter', () => {
     ];
 
     const speciesSpecific=[
-      { name: "Summer",species:"Human"}
+      { name: "Summer",species:"Human"},
+      
       
     ];
       expect (speciesFilter(speciesVariety,"Human")).toStrictEqual(speciesSpecific);
