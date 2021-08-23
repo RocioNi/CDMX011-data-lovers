@@ -1,7 +1,17 @@
+<<<<<<< HEAD
+=======
+import { example } from '../src/data.js';
+import { speciesFilter, genderFilter, sortFilter, episodesFilter } from '../src/data.js';
+>>>>>>> e4f8fbd54d1a20437215a071834d0177d607e3ba
 
 import { speciesFilter, genderFilter, sortFilter, episodesFilter } from '../src/data.js';
 
+<<<<<<< HEAD
 describe('speciesFilter', () => {
+=======
+// funcion test ejemplo
+describe('example', () => {
+>>>>>>> e4f8fbd54d1a20437215a071834d0177d607e3ba
   it('is a function', () => {
     expect(typeof speciesFilter).toBe('function');
   });
@@ -44,6 +54,54 @@ describe('genderFilter', () => {
       });
 });
 
+// funciones de filtros 
+describe('speciesFilter', () => {
+  it('is a function', () => {
+    expect(typeof speciesFilter).toBe('function');
+  });
+  it( "Deberia devolver especies", () => {
+    const speciesVariety=[ 
+     
+      { name:"Morty",species:"Alien"},
+      { name:"Armothy",species:"unknow"},
+      { name:"Aqua",species:"Humanoid"},
+      { name:"Bill",species:"Animal"},
+      { name:"Summer",species:"Human"}
+    ];
+
+    const speciesSpecific=[
+      { name: "Summer",species:"Human"}
+      
+    ];
+      expect (speciesFilter(speciesVariety,"Human")).toStrictEqual(speciesSpecific);
+      });
+});
+
+describe('genderFilter', () => {
+  it('is a function', () => {
+    expect(typeof genderFilter).toBe('function');
+  });
+  it( "Deberia devolver genero", () => {
+    const genderVariety=[ 
+      { name: "Rick",gender:"Male"},
+      { name:"Armothy",gender:"unknown"},
+      { name:"Aqua",gender:"Humanoid"},
+      { name:"Bill",gender:"Animal"},
+      { name:"Summer",gender:"Female"},
+    ];
+
+<<<<<<< HEAD
+=======
+    const genderSpecific=[
+      { name:"Summer",gender:"Female"},
+  
+    ];
+      expect (genderFilter(genderVariety,"Female")).toStrictEqual(genderSpecific);
+      });
+});
+
+
+>>>>>>> e4f8fbd54d1a20437215a071834d0177d607e3ba
 describe('sortFilter', () => {
   it('is a function', () => {
     expect(typeof sortFilter).toBe('function');
@@ -85,6 +143,40 @@ describe('sortFilter', () => {
         ];
           expect (sortFilter(zaVariety,"downward")).toStrictEqual(zaOrder);
           });
+<<<<<<< HEAD
+=======
+});
+
+describe('episodesFilter', () => {
+  it('is a function', () => {
+    expect(typeof episodesFilter).toBe('function');
+  });
+  it( "Deberia devolver personaje por episodio", () => {
+    const episodeVariety=[ 
+      { name: "Agency Director",episode:"https://rickandmortyapi.com/api/episode/24"},
+      { name:"Albert Einstein",episode:"https://rickandmortyapi.com/api/episode/12"},
+      { name:"Antenna Morty",episode:[
+        "https://rickandmortyapi.com/api/episode/10",
+        "https://rickandmortyapi.com/api/episode/28"
+    ]},
+      { name:"Aqua Morty",episode:[
+        "https://rickandmortyapi.com/api/episode/10",
+        "https://rickandmortyapi.com/api/episode/22"
+    ]},
+      { name:"Aqua Rick",episode:[
+        "https://rickandmortyapi.com/api/episode/10",
+        "https://rickandmortyapi.com/api/episode/22",
+        "https://rickandmortyapi.com/api/episode/28"
+    ]},
+    ];
+
+    const episodeSpecific=[
+      { name: "Agency Director",episode:"https://rickandmortyapi.com/api/episode/24"},
+  
+    ];
+      expect (episodesFilter(episodeVariety,"https://rickandmortyapi.com/api/episode/24")).toStrictEqual(episodeSpecific);
+      });
+>>>>>>> e4f8fbd54d1a20437215a071834d0177d607e3ba
 });
 
 describe('episodesFilter', () => {
