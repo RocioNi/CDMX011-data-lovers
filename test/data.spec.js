@@ -1,6 +1,5 @@
 
 import { speciesFilter, genderFilter, sortFilter, episodesFilter } from '../src/data.js';
-const ejemplo= "ejemplo"
 
 describe('speciesFilter', () => {
   it('is a function', () => {
@@ -17,8 +16,7 @@ describe('speciesFilter', () => {
     ];
 
     const speciesSpecific=[
-      { name: "Summer",species:"Human"},
-      
+      { name: "Summer",species:"Human"}
       
     ];
       expect (speciesFilter(speciesVariety,"Human")).toStrictEqual(speciesSpecific);
