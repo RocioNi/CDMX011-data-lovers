@@ -120,6 +120,12 @@ h4 {
   justify-content:center
 }
 
+.footer {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-left: 12rem;
+  }
+
 
 .image {
   border-radius: 40%;
@@ -133,4 +139,6 @@ h4 {
   text-align: center;
   font-family: "Palette Mosaic", cursive;
 }
+
+
 
