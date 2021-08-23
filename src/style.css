@@ -13,7 +13,7 @@ header{
 } 
 
  /* estilo del filtro  */
-.container-select {
+.container-select { 
   display: flex;
   flex-flow: column nowrap;
   background: rgba(128, 128, 128, 0.459);
@@ -23,6 +23,7 @@ header{
   height: 100%;
 }
 
+
   /* etiquetas del filtro */
 label {
   text-align: left;
@@ -31,6 +32,7 @@ label {
   font-family: "Palette Mosaic", cursive;
 }
 
+/* imagen de fondo  */
 body {
   background-image: url(../img/fondo-portal.png);
   background-size: cover;
@@ -57,16 +59,16 @@ body {
   box-sizing: border-box;
   transform-style: preserve-3d;
   transition: all 0.5s ease;
-}
-
 
 /* efecto tarjetas */
 .tarjetas:hover {
   border: solid 4px rgb(0, 162, 255);
-  box-shadow: rgb(0, 174, 255) 0px 0px 20px;
+  box-shadow: rgb(255, 115, 0) 0px 0px 10px;
   transform: rotateY(180deg);
 }
 
+
+/* tarjeta parte frontal */
 .front-card {
   margin-top: -10%;
   height: 300px;
@@ -106,19 +108,18 @@ h4 {
 }
 
 .lot-articles {
-  
   display: flex;
   flex: 2 1 50%;
   flex-flow: row wrap;
 }
 
 .articles {
- 
-  display: flex;
+ display: flex;
   flex: 2 1 auto;
   flex-flow: row wrap;
   justify-content:center
 }
+
 
 .image {
   border-radius: 40%;
