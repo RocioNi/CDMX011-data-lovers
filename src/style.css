@@ -33,7 +33,7 @@ label {
 
 /* imagen de fondo  */
 body {
-  background-image: url(/src/img/fondo-portal.png);
+  background-image: url(../src/img/fondo-portal.png);
   background-size: cover;
   background-attachment: fixed;
   
