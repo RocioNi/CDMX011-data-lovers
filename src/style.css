@@ -32,12 +32,12 @@ label {
 }
 
 /* imagen de fondo  */
-/* body {
-  background-image: url('..src/img/fondo-portal.png');
+body {
+  background-image: url('img/fondo-portal.jpg');
   background-size: cover;
   background-attachment: fixed; 
   
-} */
+}
 
 /* container padre (principal) */
 .container {
