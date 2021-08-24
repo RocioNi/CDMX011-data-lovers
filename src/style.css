@@ -49,6 +49,7 @@ body {
 
 /* estilo de tarjetas */
 .tarjetas {
+  /* background-color: #FFF7AE; */
   perspective: 1000px;
   height: 300px;
   width: 230px;
@@ -58,7 +59,7 @@ body {
   box-sizing: border-box;
   transform-style: preserve-3d;
   transition: all 0.5s ease;
-  background-color: #FFF7AE;
+  
 }
 
 /* efecto tarjetas */
