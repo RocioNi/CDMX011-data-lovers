@@ -51,4 +51,9 @@ document.getElementById('ordenA').addEventListener('change', function(e) {
     document.getElementById('species').value = '';
     document.getElementById('gender').value = '';
     document.getElementById('episodes').value = '';
+    allCharacters (info);
+    
 });
+
+
+
