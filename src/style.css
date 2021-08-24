@@ -121,13 +121,6 @@ h4 {
   justify-content:center
 }
 
-/* footer {
-  display: flex;
-  flex-flow: column nowrap;
-  padding-left: 12rem;
-  } */
-
-
 .image {
   border-radius: 40%;
   flex: 3 1 30%;
